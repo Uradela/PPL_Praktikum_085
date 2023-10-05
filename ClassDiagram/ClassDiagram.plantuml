@@ -1,0 +1,102 @@
+@startuml
+
+abstract class Controller {
+    model : Model
+}
+
+abstract class Model {
+}
+
+Controller -- Model
+
+abstract class View{
+    void Display()
+}
+
+Controller -- View
+View <|-- Specification_Input_Screen
+View <|-- Diagram_Input_Screen
+View <|-- Home_Screen
+View <|-- Login_Screen
+View <|-- Signup_Screen
+View <|-- Tabel_Screen
+
+
+entity User extends Model {
+    user_id : String
+    email : String
+    password : String
+}
+
+
+entity Project extends Model{
+    id_diagram : String
+    judul_project : String
+    img_path : String
+}
+
+entity Spec extends Model {
+    spec_id : String
+    deskrisi : String
+    kondisi_awal : String
+    kondisi_akhir : String
+}
+
+entity Skenario extends Model {
+    id_skenario : String
+    step : String
+    isactor : Boolean
+    category : Boolean
+}
+
+entity Use_Case extends Model {
+    id_usecase : String
+    use_case : String
+}
+
+entity Aktor extends Model {
+    id_aktor : String
+    nama_aktor : String
+    deskripsi_project : String
+}
+
+Controller <|-- User_Controller
+Controller <|-- Diagram_Controller
+Controller <|-- Spec_Controller
+Controller <|-- Project_Controller
+
+class NLP_Model {
+}
+
+class User_Controller {
+    +showLogin() : Void
+    +showSignup() : Void
+    +authenticate(request : Request) : Void
+    +storeUser(request : Request) : Void
+    +detail(idUser : String) : Void
+}
+
+class Diagram_Controller {
+    +createDiagram() : Void
+    +storeDiagram(request : Request) : Void
+}
+
+class Spec_Controller {
+    +createSpec() : Void
+    +storeSpec(request : Request) : Void
+}
+
+class Project_Controller {
+    +index(idUser : String) : Void
+    +detailProject(idProject : String) : Void
+}
+
+Diagram_Controller -- NLP_Model
+Spec_Controller -- NLP_Model
+
+class NLP_Model{
+    +findAktor(desc : String) : String[ ]
+    +findUsecase(desc : String) : String[ ]
+}
+
+@enduml
