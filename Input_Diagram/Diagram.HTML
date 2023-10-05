@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <script src="nav.js" defer></script>
+        <title>Input Diagram</title>
+      </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-left">
+        <img src="logo.png" alt="LOGO UGENE" />
+      </div>
+      <div class="navbar-right">
+        <span class="username">USERNAME</span>
+        <img src="user-circle.png" alt="LOGO UGENE" />
+      </div>
+    </nav>
+
+    <div class="root">
+      <div class="form-group">
+        <label for="projectName">Project Name</label>
+        <input type="text" id="projectName" name="projectName" placeholder="Enter Project Name" />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder=""></textarea>
+      </div>
+      <div class="action-buttons">
+        <button class="add-actor-button">Add Actor</button>
+        <button class="submit-button">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

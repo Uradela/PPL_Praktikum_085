@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(to right top, #552e4f, 10%, #071544);
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-attachment: fixed;
+}
+
+.root {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #071544;
+  padding: 2rem 5.5rem;
+  color: #fff;
+}
+
+.bg-main-col {
+  background-color: #071544;
+}
+
+.navbar-left img {
+  margin-left: 30px;
+  width: 140px;
+  height: auto;
+}
+
+.navbar-right {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.username {
+  margin-right: 1rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.navbar-right img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+  
+.form-group {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+  
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    margin-left: 1cm; 
+}
+
+.form-group input {
+    padding : 10px;
+    margin-left: 1cm;
+    max-width: calc(100%);
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    box-sizing: border-box;
+  }
+
+  .form-group textarea {
+    width: 100%;
+    max-width: calc(100% - 3cm); 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    box-sizing: border-box;
+    margin-left: 1cm; 
+    height: 300px;
+  }
+  
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 100px; 
+}
+
+.add-actor-button,
+.submit-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #fff; 
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    
+}
+
+.add-actor-button:hover {
+    background-color: #00738b;
+}
+
+.submit-button:hover {
+    background-color: #00738b;
+}
