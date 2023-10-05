@@ -1,0 +1,18 @@
+input
+
+Cari_actor(desc):
+    tokenization desc
+    diinputkan ke dalam model NER
+    didapatkan aktor
+
+Cari_use_case(desc):
+
+
+
+Buat_diagram(actor, use_case):
+    bikin file dengan format .plantuml 
+    masukan actor dan use_case ke code
+    masukan hasil code actor dan use_case ke .plantuml
+    convert .plantuml ke .png
+
+Dijadikan Spesification():
